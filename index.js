@@ -5,7 +5,8 @@ var shp = require('shpjs'),
 
 
 var addToMap = function (gj) {
-  L.geoJson(gj.features).addTo(map);
+  var geojsonLayer = L.geoJson(gj.features).addTo(map);
+  map.fitBounds(geojsonLayer.getBounds());
 }
 
 shpEl.addEventListener("change", handleFiles, false);
