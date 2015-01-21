@@ -1,7 +1,7 @@
 <!doctype html>
-<html 
+<html>
   <head>
-    <meta charset="utf">
+    <meta charset="utf8">
     <title>Yoohoo</title>
     <style>
     body {
@@ -9,21 +9,22 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      overflow: hidden;
     }
     #map {
       width: 100%;
-      height: 80%;
+      height: 50%;
     }
     </style>
-   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
    <label for="shapefile">Shp zipfile (dbf, shx, shp)</label>
    <input type="file" name="shapefile" id="shapefile">
    <div id="map"></div>
+   <table class="table pull-right" id="table">
+   </table>
   
     <script src="bundle.js"></script>
   </body>
